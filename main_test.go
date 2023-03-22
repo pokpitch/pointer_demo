@@ -14,3 +14,16 @@ func TestDouble(t *testing.T) {
 		t.Errorf("Given %d, Want %d. But %d", given, want, result)
 	}
 }
+
+func TestAppGreeting(t *testing.T) {
+
+	given := "Bob"
+	want := "Hi, Bob"
+
+	result := given
+	appendGreeting(&result)
+	if result != want {
+		t.Errorf("Given %s, Want %s. But %s", given, want, result)
+	}
+
+}

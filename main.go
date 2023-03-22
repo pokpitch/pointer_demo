@@ -8,3 +8,7 @@ func main() {
 func double(p *int) {
 	*p = *p * 2
 }
+
+func appendGreeting(s *string) {
+	*s = "Hi, " + *s
+}
